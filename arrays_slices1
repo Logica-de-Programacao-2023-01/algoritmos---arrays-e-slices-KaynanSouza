@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+	var soma, N1, N2, N3 int
+
+	fmt.Print("escreva um numero:")
+	fmt.Scan(&N1)
+	fmt.Print("escreva orutro numero:")
+	fmt.Scan(&N2)
+	fmt.Print("escreva mais um numero:")
+	fmt.Scan(&N3)
+
+	var numero = []int{N1, N2, N3}
+	for i := 0; i < len(numero); i++ {
+		soma = numero[i] + soma
+	}
+	fmt.Print(soma)
+}
